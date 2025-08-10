@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>The Big Day - Milan</title>
+    <style>
+        body {
+            background: #010D17;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .titulo-img {
+            width: 350px;
+            margin-bottom: 40px;
+        }
+        .boton-listo {
+            background: #FFD600;
+            color: #222;
+            font-size: 2rem;
+            font-family: jaro;
+            border: none;
+            border-radius: 16px;
+            padding: 20px 40px;
+            cursor: pointer;
+            margin-top: 60px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            transition: background 0.2s;
+        }
+        .boton-listo:hover {
+            background: #FFF176;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/logo.png" alt="The Big Day" class="titulo-img">
+    <button class="boton-listo">¿Listo para tu fiesta?</button>
+    <script>
+        document.getElementById('startBtn').onclick = function() {
+            window.location.href = 'juego.js'; // Cambia 'main.html' por el archivo de tu juego
+        }
+    </script>
+</body>
+</html>
